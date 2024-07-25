@@ -33,7 +33,7 @@ body{
     align-items: center;
 }
 .margin{
-    margin: 0 40px;
+    margin: 0 60px;
 }
 .nav-link{
     text-decoration: none;
@@ -145,9 +145,14 @@ header div h4{
     border-radius: 10px;
 }
 #bmi{
-    background-color: rgba(125, 120, 120, 0.406);
     padding: 20px;
     margin-top: 5rem;
+}
+.bmi-flex{
+    align-items: normal;
+    justify-content:space-around;
+    background-color: rgba(125, 120, 120, 0.406);
+    padding: 1.5rem;
 }
 .trainings{
     margin-top: 5rem;
@@ -159,8 +164,13 @@ header div h4{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-#table-chart, th, td{
-    border: 1px solid slategray;
+#table-chart{
+    border-collapse: collapse;
+    width: 90%;
+}
+th, td{
+    border: 1px solid #ffffff8f;
+    padding: 10px;
 }
 .trainer{
     max-width: 100%;
@@ -205,14 +215,14 @@ header div h4{
   }
   #position{
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.751);
-    width: 100%;
+    backdrop-filter: blur(8px);
+     width: 100%;
     margin-top: -10px;
 }
     .nav-part-2{
     display: none;
   }  
-  .banner{
+  .banner,  .run-an, .bmi-flex{
     flex-direction: column;
   }
   #banner-tittle{
@@ -220,9 +230,6 @@ header div h4{
   }
   .habit-part-2{
     grid-template-columns: repeat(1,1fr);
-  }
-  .run-an{
-    flex-direction: column;
   }
 #run-an-image{
     margin-top: 10px;
