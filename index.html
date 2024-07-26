@@ -170,13 +170,26 @@
                     <div class="bmi-cal-tittle">
                         <h3>Calculate Your BMI</h3>
                         <p class="small-text">  Exillum dolorum tempora blanditiis exercitationem</p>
-                    <div class="data-input">
-                        <input type="number" placeholder="Height/cm"><br>
+                    <form class="data-input">
+                        <input type="number" placeholder="Height/cm">
                         <input type="number" placeholder="Weight/kg"><br>
                         <input type="number" placeholder="Age">
+                        <!-- <input type="text" placeholder="Sex"><br> -->
+                        <!-- <input type="text" placeholder="" id="select"><br> -->
+                        <select name="gander" id="" >
+                            <option value="gander">Sex</option>
+                            <option value="gander">Male</option>
+                            <option value="gander">Female</option>
+                            <option value="gander">Custom</option>
+                        </select>
+                        <br>
+                        <select name="" id="factor">
+                            <option value="">Select an activity factor</option>
+                            <option value=""></option>
+                        </select>
                         <br>
                         <button class="primary-btn">Calculate</button>
-                    </div>
+                    </form>
                 </div>
                 </div>
         </section>
